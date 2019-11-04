@@ -1,0 +1,457 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Big Shoulders Display', cursive;
+}
+section { 
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;  
+}                           /* Sekcja strony w którym się mieszczą 4 divy */ 
+
+section #piotrek {
+    position: relative;
+    width: 35%;
+    height: 91%;
+    background-color: rgb(252, 224, 52);
+    animation: zmiana 10s infinite;
+}                         /* Żółte tło z emotką Piotrek*/
+
+section #piotrek img {
+   width: 25%;
+   position: absolute;
+   top: 40%;
+   left: 0%;
+}                       /* emotka Piotrek*/
+
+section #ania {
+    position: relative;
+    width: 65%;
+    height: 91%;
+    background-color: white;
+    animation: zmiana1 10s infinite;
+}                      /* Białe tło z emotką Ania*/
+
+section #ania img {
+    width: 15%;
+    position: absolute;
+    top: 15%;
+    right: 0;
+}                       /* Emotka Ania*/
+
+ #white {
+  background-color: white;
+  width: 35%;
+  height: 9%;
+  animation: zmiana1 10s infinite;
+}                    /* Biały div na dole*/
+
+#yellow {
+    background-color: rgb(252, 224, 52);
+    width: 65%;
+    height: 9%;
+    animation: zmiana 10s infinite;
+    
+}                    /* Żółty div na dole*/
+.poznaj {
+    margin: 10px 30px;
+    font-size: 30px;
+}                   /* poznaj nas lepiej */
+.tekst {
+    position: absolute;
+    width: 50%;
+    top: 25%;
+    left: 31%;  
+}                   /*kontener z tekstem */
+.tekst h1 {
+    font-size: 45px;
+}                   /* Nagłówek */
+h5 {
+    font-size: 20px;
+    width: 45vw;
+    position: absolute; 
+    top: 50%;
+    text-align: justify;
+    
+}
+
+
+@keyframes zmiana {
+    50% {
+        background-color: white;
+    }
+}
+@keyframes zmiana1 {
+    50% {
+        background-color: rgb(252, 224, 52);
+    }
+}
+
+/* MAIN*/
+
+.steps {
+    
+    display: flex;
+    justify-content: center;
+}                                   
+h2 {
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
+}                                   /* Nagłówek */
+.steps img { 
+    width: 40%;
+    text-align: center;
+    padding-bottom: 30px;
+    transition: 0.5s;
+}                                 /* wszystkiee zdjęcia */
+.idea, .create, .web {
+    text-align: center;
+    margin: 20px;
+    width: 33%;
+}                                 /* Divy img + p */
+.steps p {
+    font-size: 20px;
+    text-align: justify;
+}                                /* tekst pod zdjięciami*/
+
+
+.idea:hover img {
+    transform: scale(1.1);
+}
+.create:hover img {
+    transform: scale(1.1);
+}
+.web:hover img {
+    transform: scale(1.1);
+}                               /*Hovery*/
+
+
+main h1 {
+ margin: 40px 0px;
+ color: gray;
+ text-align: center;
+ text-transform: uppercase;
+ font-size: 80px;                /* team develoopers*/
+}
+.contener {
+    margin: 20px 40px;
+    display: flex;
+    flex-wrap: wrap;
+}                             /* caly kontener*/
+.obrazek1 {
+    display: flex;
+    flex-wrap:wrap;
+    margin-bottom: 60px;
+}                               /* div z Piotrkiem */
+
+.obrazek1 img{
+    width: 20%;
+    background-color: #e9e9e9;
+}                               /* samo zdjięcie */
+
+.obrazek1 p {
+    width: 100%;
+    padding-left: 20px;
+    text-align: center;
+    font-size: 20px;
+}                               /* jego tekst*/
+
+.contact{
+    width:100%;
+    text-align: center;
+    background-color: white;
+}                               /* ikony kontaktu obie */
+h3 {
+    text-align: center;
+    font-size: 40px;
+}                                  /* Naglowki Piotr i Ania */
+.wrapper{
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 80%;
+    display:flex;
+    flex-direction: column;
+    
+}                                 /* div z kontaktami*/ 
+                                 
+
+.obrazek2 {
+    display: flex;
+    flex-wrap: wrap;
+
+}                                   /* div z Ania */
+.obrazek2 img {
+    width: 20%;
+    background-color: #e9e9e9 ;
+}                                   /* jej zdjiecie */
+.obrazek2 p {
+    width: 80%;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 15px;
+}                                  /* jej tekst */
+.contact img{
+    width:50px;
+    background:transparent;
+}                                  /* ikonki kontaktu */
+footer {
+    background-color:  rgb(252, 224, 52);
+    height: 40px;
+    width: 100%;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 3px;
+    line-height: 40px;
+}                                  /* stopka*/ 
+
+@media only screen and (max-width: 1024px) {
+    section #piotrek img {
+        width: 28%; 
+        top: 38%;      
+     }                       /* emotka Piotrek*/
+     section #ania img {
+        width: 18%;
+        top: 10%; 
+    }                         /*Emotka Ania*/
+     
+    .tekst h1 {
+        font-size: 55px;  
+    }                   /* Nagłówek */
+    h5 {
+        margin-top: 33px;
+        font-size: 18px;   
+    }
+    .poznaj {
+        margin: 5px 30px;
+        font-size: 35px;
+    }  
+    .obrazek1 img{
+        width: 35%;
+    } 
+    .obrazek1 p {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        font-size: 23px;
+    }  
+    .wrapper{
+        flex-basis: 65%;
+        margin: 0 auto;
+    }  
+    .contact {
+        width: 100%;
+        text-align: center;
+    }   
+    .contact img{
+        width: 40px;
+
+    } 
+    .obrazek2 img {
+        width: 35%;
+    }   
+    .obrazek2 p {
+        width: 100%;
+        font-size: 23px;
+    }  
+    .contact img{
+        width: 40px;
+    } 
+    footer {
+        height: 60px;
+        line-height: 60px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .obrazek1 p {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        font-size: 20px;
+    }  
+    .obrazek2 p {
+        width: 100%;
+        font-size: 20px;
+    }  
+    main h1 {
+        font-size: 50px;                /* team develoopers*/
+       }
+    .steps img { 
+        width: 50%;
+    }
+    .steps p {
+        font-size: 22px;
+    }   
+    h2 {
+        padding: 34px;
+    }  
+    section #piotrek img {
+        width: 35%;
+     }   
+     section #ania img {
+        width: 22%;
+     } 
+     .tekst h1 {
+        font-size: 48px;  
+    }                   /* Nagłówek */
+    h5 {
+        margin-top: 23px;
+        font-size: 19px;   
+    }
+}
+@media only screen and (max-width: 560px) {
+    
+section #piotrek {
+    width: 40%;
+}                         /* Żółte tło z emotką Piotrek*/
+
+section #piotrek img {
+   width: 38%;
+   top: 45%;
+}                       /* emotka Piotrek*/
+
+section #ania {
+    width: 60%;
+}                      /* Białe tło z emotką Ania*/
+
+section #ania img {
+    width: 28%;
+    top: 7%;
+}                       /* Emotka Ania*/
+
+ #white {
+  width: 40%;
+}                    /* Biały div na dole*/
+
+#yellow {
+    width: 60%; 
+ }   
+ .poznaj {
+    margin: 5px 30px;
+    font-size: 30px;
+}                   /* poznaj nas lepiej */
+.tekst {
+    position: absolute;
+    width: 50%;
+    top: 25%;
+    left: 31%;  
+}                   /*kontener z tekstem */
+.tekst h1 {
+    font-size: 43px;
+}                   /* Nagłówek */
+h5 {
+    font-size: 16px;
+    top: 55%;    
+ }
+                                
+
+ .steps { 
+    flex-wrap: wrap;
+}                                   
+
+h2 {
+    font-size: 35px;
+    text-align: center;
+}                                   /* Nagłówek */
+.steps img { 
+    width: 40%;
+}                                 /* wszystkiee zdjęcia */
+.idea, .create, .web {
+    width: 100%;
+}                                 /* Divy img + p */
+.steps p {
+    font-size: 23px;
+ }                                /* tekst pod zdjięciami*/
+
+
+
+/*********************************************************************************************/
+
+
+
+
+.obrazek1 img{
+    width: 100%;
+}                               /* samo zdjięcie */
+
+.obrazek1 p {
+    width: 100%;
+    padding-left: 5px;
+    font-size: 18px;
+}                               /* jego tekst*/
+
+.contact{
+    width:100%;
+    text-align: center;
+    background-color: white;
+}                               /* ikony kontaktu obie */
+h3 {
+    text-align: center;
+    font-size: 42px;
+}                                  /* Naglowki Piotr i Ania */
+
+.obrazek2 img {
+    width: 100%;
+}                                   /* jej zdjiecie */
+.obrazek2 p {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 15px;
+}                                  /* jej tekst */
+.contact img{
+    width: 40px;
+ }                  
+ footer {
+     height: 85px;
+     line-height: 85px;
+ }
+}
+@media only screen and (max-width: 320px) {
+    section #piotrek {
+        width: 43%;
+    }                         /* Żółte tło z emotką Piotrek*/
+    
+    section #piotrek img {
+       width: 47%;
+       top: 55%;
+    }                       /* emotka Piotrek*/
+    
+    section #ania {
+        width: calc(100% - 43%);
+    }                      /* Białe tło z emotką Ania*/
+    
+    section #ania img {
+        width: 39%;
+        top: 5%;
+    }                       /* Emotka Ania*/
+    
+     #white {
+      width: 43%;
+    }                    /* Biały div na dole*/
+    
+    #yellow {
+        width:  calc(100% - 43%);
+     }   
+     .poznaj {
+        margin: 10px 30px;
+        font-size: 23px;
+    }                   /* poznaj nas lepiej */
+    .tekst {
+        top: 32%;
+        left: 31%;  
+    }                   /*kontener z tekstem */
+    .tekst h1 {
+        font-size: 33px;
+    }                   /* Nagłówek */
+    h5 {
+        font-size: 14px;
+        top: 48%;    
+     }
+     .contact img{
+        width: 30px;
+     }
+}
